@@ -1,0 +1,26 @@
+.navBar{
+    padding: 20px 10%;
+    .logoIcon{
+        width: 35%;
+    }
+    select{
+        padding: 5px 8px;
+        border-radius: 6px;
+        border: 2px solid white;
+        background: transparent;
+        color: white;
+}
+option{
+    background-color: #09005c;
+    color: white;
+}
+.signUp{
+    background-color: white;
+    color: #393939;
+    border: none;
+    border-radius: 20px;
+}
+.navRightFlex{
+    align-items: end;
+}
+}

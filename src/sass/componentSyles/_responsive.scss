@@ -1,0 +1,14 @@
+@import "./majourStyles";
+
+@media (max-width:866px) {
+    .navBarcontent{
+        .logoCol{
+            @include felxLibrary;
+        }
+    }
+    .navRightFlex{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
