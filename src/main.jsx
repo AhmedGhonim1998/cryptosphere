@@ -4,10 +4,13 @@ import App from './App.jsx'
 import './sass/globalSass/sass.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom'
+import CoinContextProvider from './assets/context/CoinContext.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
+    <CoinContextProvider>
       <App />
+    </CoinContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )
