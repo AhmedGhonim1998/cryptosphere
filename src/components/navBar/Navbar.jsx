@@ -9,7 +9,7 @@ export default function Navbar() {
     const { setCurrency } = useContext(CoinContext);
 
     const currencyHandler = (e) => {
-        switch(e.target.value) {
+        switch (e.target.value) {
             case "usd":
                 setCurrency({ name: "usd", symbol: "$" });
                 break;
@@ -29,10 +29,12 @@ export default function Navbar() {
         <>
             <div className='navBar pb-0'>
                 <Row className='navBarcontent'>
-                    <Col lg={4} md={12} sm={12} className='logoCol'>
-                        <img src={cryptoLogo} alt="img" className='logoIcon' />
+                    <Col lg={4} md={4} sm={4} xs={4} className='logoCol'>
+                        <NavLink to='/'>
+                            <img src={cryptoLogo} alt="img" className='logoIcon' />
+                        </NavLink>
                     </Col>
-                    <Col lg={4} md={12} sm={12} className='my-auto'>
+                    <Col lg={4} md={4} sm={4} xs={4} className='my-auto ListColumn'>
                         <ul className='list-unstyled d-flex justify-content-evenly'>
                             <li className='text-capitalize'><NavLink className="nav-link" to="/">home</NavLink></li>
                             <li className='text-capitalize'><NavLink className='nav-link' to="/features">features</NavLink></li>
@@ -40,7 +42,7 @@ export default function Navbar() {
                             <li className='text-capitalize'><NavLink className='nav-link' to="/blog">blog</NavLink></li>
                         </ul>
                     </Col>
-                    <Col lg={4} md={12} sm={12} className='my-auto'>
+                    <Col lg={4} md={4} sm={4} xs={4} className='my-auto'>
                         <div className="navRightFlex d-flex justify-content-end flex-column">
                             <div className="navRight">
                                 <select className='me-2' onChange={currencyHandler}>
@@ -55,7 +57,7 @@ export default function Navbar() {
                     </Col>
                 </Row>
             </div>
-            <hr className='mt-2'/>
+            <hr className='mt-2' />
         </>
     );
 }

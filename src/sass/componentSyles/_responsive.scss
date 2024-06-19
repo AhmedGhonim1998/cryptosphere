@@ -1,14 +1,45 @@
 @import "./majourStyles";
 
 @media (max-width:866px) {
-    .navBarcontent{
-        .logoCol{
-            @include felxLibrary;
+    .navBar{
+        padding: 20px 8px;
+        button{
+            gap: 8px;
+            padding: 8px 18px;
+            font-size: 14px;
         }
     }
-    .navRightFlex{
+}
+@media (max-width:700px) {
+    .navBar{
+        padding: 20px 5%;
+    }
+    .ListColumn{
+        display: none;
+    }
+    .navRight{
         display: flex;
         justify-content: center !important;
         align-items: center !important;
+    }
+    .navBarcontent{
+        display: flex;
+        justify-content:space-between;
+    }
+    .signUp{
+        width: 110px;
+    }
+}
+@media (max-width:770px){
+    :root{
+        font-size: 12px;
+    }
+    .tableLayout{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr ;
+    }
+}
+@media (max-width:473px){
+    :root{
+        font-size: 9px;
     }
 }
