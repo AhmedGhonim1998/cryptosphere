@@ -3,3 +3,45 @@
     place-self: center;
     min-height: 80vh;
 }
+.coin{
+    padding: 0 20px;
+    .coinName{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 100px auto;
+        margin-bottom: 50px;
+        img{
+            max-width: 100px !important;
+        }
+        p b{
+            font-size: 44px;
+            font-weight: 500;
+        }
+    }
+    .coinChart{
+        max-width: 600px;
+        height: 250px;
+        margin: auto;
+    }
+    .coinInfo{
+        max-width: 600px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0px;
+            border-bottom: 1px solid #5f5d5f;
+            list-style: none;
+            li{
+                &:last-child{
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

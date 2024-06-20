@@ -1,0 +1,86 @@
+.sideBars {
+        
+    background: none;
+}
+
+.sideMenu {
+background-color: #f7fafc;
+width: 215px;
+height: 100vh;
+display: flex;
+justify-content: center;
+position: fixed;
+top: 0;
+right: -100%;
+transition: 850ms;
+z-index: 10;
+overflow-y: scroll;
+}
+.active {
+right: 0;
+transition: 350ms;
+
+
+}
+
+
+.sideBarText {
+list-style: none;
+}
+
+.sideMenuItems {
+width: 100%;
+padding-left: 5%;
+}
+title {
+margin-left: 16px;
+}
+.listData{
+text-decoration: none !important;
+font-size: 1rem;
+}
+.accordion{
+background-color: initial !important;
+padding-right: 4%;
+.listHeader{
+button{
+    padding-left: 3%;
+    text-decoration: none;
+}
+}
+.accordion-body{
+padding-left: 3%;
+border: none !important
+;
+}
+.accordion-item{
+background-color: initial !important;
+border: none;
+}
+.listHeader{
+background-color: initial;
+}
+}
+.seeAll{
+text-decoration: none;
+color: blue !important;
+}
+.burgerMenu{
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+}
+.linkSidePar{
+    p{
+        font-size: 1.5rem;
+    }
+}
+/**************************side range style******************************************************/
+.Range{
+border: none;
+box-shadow: none;
+}
+.buttonRange{
+border: 1px solid rgb(204, 201, 201);
+}
+

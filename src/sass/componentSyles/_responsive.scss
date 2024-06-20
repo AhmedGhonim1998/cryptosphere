@@ -29,6 +29,14 @@
     .signUp{
         width: 110px;
     }
+    .mnu{
+        display:contents;
+    }
+}
+@media (min-width:701px){
+    .mnu{
+        display: none;
+    }
 }
 @media (max-width:770px){
     :root{
