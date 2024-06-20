@@ -37,9 +37,9 @@ export default function Home() {
                         <form className='d-flex justify-content-between align-items-center' onSubmit={searchHandler}>
                             <input onChange={inputHandler} list='coinlist' value={input} type="text" placeholder='search crypto' required/>
 
-                            <datalist id='coinlist'>
+                            {/* <datalist id='coinlist'>
                                 {allcoin.map((item , index)=>(<option key={index} value={item.name}/>))}
-                            </datalist>
+                            </datalist> */}
 
                             <Button variant='secondary' className='searchBtn' type='submit'>search</Button>
                         </form>
