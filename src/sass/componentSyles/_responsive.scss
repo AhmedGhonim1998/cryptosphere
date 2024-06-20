@@ -51,3 +51,13 @@
         font-size: 9px;
     }
 }
+@media (max-width:343px) {
+    form{
+        input{
+            width: 100px;
+        }
+        .searchBtn{
+            width: 90px !important;
+        }
+    }
+}
