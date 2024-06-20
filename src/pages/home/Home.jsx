@@ -60,9 +60,9 @@ export default function Home() {
                                         <img src={item.image} alt="image" className='currencyImage' />
                                         <p className='my-auto'>{item.name + " - " + item.symbol}</p>
                                     </div>
-                                    <p>{currency.symbol} {item.current_price.toLocaleString()}</p>
+                                    <p className='my-auto'>{currency.symbol} {item.current_price.toLocaleString()}</p>
                                     <p className={item.price_change_percentage_24h > 0 ? "green" : "red"}>{Math.floor(item.price_change_percentage_24h * 10) / 100}</p>
-                                    <p className='text-end'>{currency.symbol} {item.market_cap.toLocaleString()}</p>
+                                    <p className='text-end  my-auto'>{currency.symbol} {item.market_cap.toLocaleString()}</p>
                                 </Link>
                             ))
                         }
