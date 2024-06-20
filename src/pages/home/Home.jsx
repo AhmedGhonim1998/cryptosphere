@@ -34,13 +34,11 @@ export default function Home() {
                     <div className="hero d-flex flex-column justify-content-center align-items-center">
                         <h1 className='text-capitalize text-center mb-0'>largest <br /> crypto marketplace</h1>
                         <p className='text-center w-75 my-4'>welcome to the world's largest cryptocurrrency marketplace. Sign up to explore more about cryptos</p>
-                        <form className='d-flex justify-content-between align-items-center' onSubmit={searchHandler}>
+                        <form className='d-flex justify-content-around align-items-center' onSubmit={searchHandler}>
                             <input onChange={inputHandler} list='coinlist' value={input} type="text" placeholder='search crypto' required/>
-
-                            {/* <datalist id='coinlist'>
+                            <datalist id='coinlist'>
                                 {allcoin.map((item , index)=>(<option key={index} value={item.name}/>))}
-                            </datalist> */}
-
+                            </datalist>
                             <Button variant='secondary' className='searchBtn' type='submit'>search</Button>
                         </form>
                     </div>
